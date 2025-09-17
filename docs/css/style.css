@@ -2946,6 +2946,10 @@ button.swiper-pagination-bullet {
   opacity: 1;
 }
 
+.massage-grid__column2 {
+  display: none;
+}
+
 .massage-grid__img {
   width: 100%;
   display: block;
@@ -3691,6 +3695,16 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1434px) {
+  .massage-grid__column2 {
+    display: block;
+  }
+
+  .massage-grid__column3 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1430px) {
   .spa-grid__container {
     -moz-column-count: 2;
@@ -4317,6 +4331,13 @@ button.swiper-pagination-bullet {
   }
 
   .massage-grid__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 40px 100px;
     -webkit-column-count: 1;
        -moz-column-count: 1;
