@@ -1568,9 +1568,20 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
 }
 
 .header .btn {
@@ -2906,10 +2917,10 @@ button.swiper-pagination-bullet {
 
 .massage-grid__container {
   padding: 60px 100px;
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
   gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .massage-grid__item {
@@ -3028,7 +3039,9 @@ button.swiper-pagination-bullet {
 }
 
 .massage-grid__prices span {
+  padding-left: 10px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .massage-grid__session {
@@ -3578,6 +3591,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1518px) {
+  .massage-grid__prices {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 1511px) {
   .spa-grid__prices {
     font-size: 22px;
@@ -3669,14 +3688,6 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 1439px) {
   .reviews__card4 {
     display: block;
-  }
-}
-
-@media screen and (max-width: 1434px) {
-  .massage-grid__container {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
   }
 }
 
@@ -4549,6 +4560,17 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 50px;
+  }
+
+  .header__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
   }
 
   .header__promo {
